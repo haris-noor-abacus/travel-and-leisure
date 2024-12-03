@@ -1,0 +1,92 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #181F26;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px; 
+    margin: 0 auto; 
+    max-width: 1200px; 
+    color: white;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    color: #a55eea; 
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-grow: 1;
+    margin: 0 20px;
+    justify-content: center; 
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px; 
+    width: 20px; 
+    height: 20px; 
+}
+
+.search-bar input {
+    padding: 5px 10px 5px 30px; 
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    background-color: #333;
+    color: white;
+    background-image: url('../img/icon.png'); 
+    background-repeat: no-repeat;
+    background-position: 10px center; 
+    background-size: 20px 20px; 
+}
+
+.search-bar input::placeholder {
+    color: #888;
+}
+
+
+.search-bar input::placeholder {
+    color: #888;
+}
+
+.search-bar .shortcut {
+    position: absolute;
+    right: 10px;
+    font-size: 10px;
+    color: #666;
+}
+
+.sign-in {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center; /* Align the button text vertically */
+    justify-content: center; /* Center the button content */
+}
+
+.sign-in:hover {
+    background-color: white;
+    color: #111;
+}
