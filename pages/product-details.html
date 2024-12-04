@@ -12,9 +12,16 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
 
     <!-- Custom CSS (Your styles.css) -->
-    <link rel="stylesheet" href="../css//product-details.css">
+    <link rel="stylesheet" href="../css/product-details.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <!-- <link rel="stylesheet" href="../css/custom-style.css"> -->
+
 </head>
 <body>
+    <header>
+        <div id="header-placeholder"></div>
+    </header>
     <div class="container-fluid bg-primary text-white py-5">
         <div class="container">
             <h1 class="text-center mb-3">Browse APIs, Dive into Docs, and Build</h1>
@@ -33,7 +40,7 @@
     </div>
 
     <div class="container">
-        <div class="row">
+        <div class="row ">
             <div class="col-12">
                 <div class="categories-section">
                     <div class="row g-4">
@@ -63,7 +70,7 @@
             </div>
         </div>
 
-        <div class="row g-4">
+        <div class="row g-4 mb-4">
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card h-100">
                     <div class="card-body">
@@ -144,6 +151,33 @@
         </div>
     </div>
 
+    <footer>
+        <!-- Include the footer file -->
+        <div id="footer-placeholder"></div>
+    </footer>
+    <script>
+        // Function to load external HTML content
+        function loadHTML(file, elementId) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+    
+                    // Adjust image paths by prepending "../"
+                    const images = document.getElementById(elementId).querySelectorAll('img');
+                    images.forEach(img => {
+                        const currentSrc = img.getAttribute('src');
+                        if (currentSrc && !currentSrc.startsWith('../')) {
+                            img.src = '../' + currentSrc;
+                        }
+                    });
+                });
+        }
+    
+        // Load the header and footer
+        loadHTML('../pages/header.html', 'header-placeholder');
+        loadHTML('../pages/footer.html', 'footer-placeholder');
+    </script>
     <script type="module" src="/main.js"></script>
 </body>
 </html>
