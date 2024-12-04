@@ -737,15 +737,28 @@ text-decoration-skip-ink: none;
     }
   }
   
-  /* CTA Section */
-  .cta-login-btn {
+/* CTA Section */
+.cta-login-btn {
     color: white;
     background-color: #11309c;
+    padding: 16px 25px;
+    gap: 8px;
+    border-radius: 2px 0px 0px 0px;
+    opacity: 0px;
   }
   .cta-explore-api-btn {
-      color: black;
-      background-color: #DCDFE2;
+    color: black;
+    background-color: #dcdfe2;
+    padding: 16px 0px 16px 0px;
+    gap: 8px;
+    padding: 16px 25px;
+    border-radius: 2px 0px 0px 0px;
+    border: none;
+    opacity: 0px;
   }
   /* Responsive adjustments */
   @media (max-width: 768px) {
+      .cta-btns{
+          margin-bottom: 20px;
+      }
   }
