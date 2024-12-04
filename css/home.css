@@ -646,3 +646,51 @@ text-decoration-skip-ink: none;
       font-size: 2.5rem;
     }
   }
+
+  /* Steps Section */
+.step-sub-title {
+    width: 600px;
+    margin: auto;
+  }
+  
+  .steps .card {
+    height: 282px;
+  }
+  .steps .card-body {
+    padding: 24px 32px;
+  }
+  .steps .card-1 {
+    background-color: #dae4ff;
+    border: 1.5px solid #96acf7;
+    border-radius: 2px;
+  }
+  .steps .card .heading {
+    font-size: 3rem !important;
+  }
+  .steps .card-2 {
+    background-color: #ffdec6;
+    border: 1.5px solid #ffae89;
+    border-radius: 2px;
+  }
+  .steps .card-3 {
+    background-color: #f5f2ea;
+    border: 1.5px solid #eef3f7;
+    border-radius: 2px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+  }
+  
+  /* CTA Section */
+  .cta-login-btn {
+    color: white;
+    background-color: #11309c;
+  }
+  .cta-explore-api-btn {
+      color: black;
+      background-color: #DCDFE2;
+  }
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+  }
