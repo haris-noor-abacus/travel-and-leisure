@@ -57,8 +57,6 @@
     border-radius: 2px;
     padding: 20px;
     margin-bottom: 1rem;
-    /* position: relative; */
-    /* overflow: hidden; */
     width: 448px;
     height: 250px;
     display: flex;
@@ -180,10 +178,13 @@
     }
   }
   
-  
+  .features{
+    background: var(--Nautral-100, rgba(244, 251, 255, 1));
+
+  }
   /* Features */
   .features-title {
-  width: 450px;
+  width: 470px;
   font-family: Roboto Flex;
   font-size: 40px;
   font-weight: 600;
@@ -197,6 +198,74 @@
   .features .bi {
     color: #0d6efd;
   }
+
+
+
+  .subheading-and-btn-wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+
+.features-subheading{
+width: 470px;
+font-size: 16px;
+font-weight: 400;
+line-height: 25.6px;
+letter-spacing: var(--TitleLargeTracking);
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: var(--Nautral-400, rgba(81, 90, 99, 1));
+
+
+  }
+
+  .btn-browse-all{
+    /* width: Fill (160px)px;
+height: Fill (24px)px; */
+padding: 10px 24px 10px 24px;
+gap: 8px;
+opacity: 0px;
+font-family: Roboto Flex;
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0.10000000149011612px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+background-color: white;
+color: var(--Brand-Blue-400, rgba(17, 48, 156, 1));
+border: 1px solid var(--Brand-Blue-400, rgba(17, 48, 156, 1)); ;
+
+  }
+
+.features .card {
+
+padding: 0px 0px 10px 0px;
+gap: 8px;
+border-radius: 2px 0px 0px 0px;
+border: 1px solid var(--Nautral-300, rgba(220, 223, 226, 1));
+  }
+
+  .features .card .card-body {
+    display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+  }
+
+.featured-card-title {
+
+font-size: 24px;
+font-weight: 600;
+line-height: 36px;
+letter-spacing: -0.011em;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
   
   .stats .display-4 {
     font-weight: bold;
@@ -208,6 +277,10 @@
   @media (max-width: 768px) {
     .features-title{
       width: 100%;
+    }
+
+    .features-subheading{
+        width: 100%;
     }
   }
   .community .card {
