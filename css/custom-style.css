@@ -1,15 +1,196 @@
 /* Custom styles to complement Bootstrap */
+
+/* Hero Section */
 .hero {
-  padding: 100px 0;
-  background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+  padding: 80px 0;
+  background: linear-gradient(180deg, #0A0F29 0%, #070B1F 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
-.card {
-  transition: transform 0.3s ease;
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: white;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+.hero-text {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  color: #CBD5E1;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-get-started {
+  background-color: #2563EB;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+}
+
+.btn-explore {
+  background-color: transparent;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-weight: 500;
+}
+
+/* API Cards */
+.api-cards {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.api-card {
+  border-radius: 2px;
+  padding: 20px;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+  width: 448px;
+  height: 250px;
+  display: flex;
+  align-items: start;
+}
+
+.api-card.wyndham {
+  background: linear-gradient(135deg, #1E3A8A 0%, #2563EB 100%);
+}
+
+.api-card.wyndham::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(96, 165, 250, 0) 0%, rgba(96, 165, 250, 0.4) 100%);
+  transform: skewX(-20deg);
+}
+
+.api-card.panorama {
+  background: linear-gradient(135deg, #991B1B 0%, #DC2626 100%);
+}
+
+.api-card.panorama::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(248, 113, 113, 0) 0%, rgba(248, 113, 113, 0.4) 100%);
+  transform: skewX(-20deg);
+}
+
+.api-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  gap: 70px;
+}
+
+.api-card h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.api-count {
+  font-size: 0.875rem;
+  opacity: 0.8;
+  color: white;
+  display: block;
+}
+
+.btn-explore-api {
+  background-color: white;
+  color: #0F172A;
+  padding: 0.625rem 1.25rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.btn-explore-api:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-1px);
+}
+
+.btn-explore-api i {
+  font-size: 1rem;
+}
+
+.login-text {
+  color: #CBD5E1;
+  font-size: 0.875rem;
+  text-align: justify;
+  margin-top: 1rem;
+}
+
+.login-link {
+  color: #60A5FA;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero {
+      padding: 60px 0;
+  }
+
+  .hero-title {
+      font-size: 2.5rem;
+  }
+
+  .api-cards {
+      margin-top: 2rem;
+  }
+
+  .api-card {
+      height: auto;
+      padding: 1.5rem;
+  }
+}
+
+
+/* Features */
+.features-title {
+  width: 450px;
+  font-family: Roboto Flex;
+font-size: 40px;
+font-weight: 600;
+line-height: 48px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
 }
 
 .features .bi {
@@ -28,6 +209,8 @@
 .steps .card {
   border-radius: 15px;
 }
+
+
 
 .testimonials img {
   height: 200px;
