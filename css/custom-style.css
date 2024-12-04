@@ -57,8 +57,8 @@
   border-radius: 2px;
   padding: 20px;
   margin-bottom: 1rem;
-  position: relative;
-  overflow: hidden;
+  /* position: relative; */
+  /* overflow: hidden; */
   width: 448px;
   height: 250px;
   display: flex;
@@ -69,7 +69,7 @@
   background: linear-gradient(135deg, #1E3A8A 0%, #2563EB 100%);
 }
 
-.api-card.wyndham::before {
+/* .api-card.wyndham::before {
   content: '';
   position: absolute;
   top: 0;
@@ -78,13 +78,13 @@
   height: 100%;
   background: linear-gradient(90deg, rgba(96, 165, 250, 0) 0%, rgba(96, 165, 250, 0.4) 100%);
   transform: skewX(-20deg);
-}
+} */
 
 .api-card.panorama {
   background: linear-gradient(135deg, #991B1B 0%, #DC2626 100%);
 }
 
-.api-card.panorama::before {
+/* .api-card.panorama::before {
   content: '';
   position: absolute;
   top: 0;
@@ -93,7 +93,7 @@
   height: 100%;
   background: linear-gradient(90deg, rgba(248, 113, 113, 0) 0%, rgba(248, 113, 113, 0.4) 100%);
   transform: skewX(-20deg);
-}
+} */
 
 .api-card-content {
   display: flex;
@@ -176,14 +176,15 @@
   .api-card {
       height: auto;
       padding: 1.5rem;
+      width: 100%;
   }
 }
 
 
 /* Features */
 .features-title {
-  width: 450px;
-  font-family: Roboto Flex;
+width: 450px;
+font-family: Roboto Flex;
 font-size: 40px;
 font-weight: 600;
 line-height: 48px;
@@ -202,6 +203,13 @@ text-decoration-skip-ink: none;
   color: #0d6efd;
 }
 
+
+
+@media (max-width: 768px) {
+  .features-title{
+    width: 100%;
+  }
+}
 .community .card {
   min-height: 200px;
 }
