@@ -1,138 +1,160 @@
-/* Logo styling */
-.logo {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-
 
 .logo-img {
-    width: 95px;
+    width: 70px; 
     height: auto;
     margin-right: 10px;
 }
 
-/* Search Bar Styling */
+/* Navbar styles */
+.navbar {
+    padding-top: 16px;
+}
+
+
 .search-bar {
+    position: relative;
     display: flex;
     align-items: center;
+    margin: 0 1rem;
 }
-
-.search-bar .search-input {
-    width: 418px; /* Fixed width */
-    height: 40px; /* Fixed height */
-    max-height: 40px; /* Ensure the height doesn't exceed 40px */
+.search-input {
+    width: 418px;
+    height: 40px;
     background-color: #000000;
-    color: white;
-    padding-left: 30px; /* Space for the icon */
-    padding-top: 8px; /* Top padding */
-    padding-right: 12px; /* Right padding */
-    padding-bottom: 8px; /* Bottom padding */
-    padding-left: 38px; /* Left padding */
-    background-image: url('../img/icon.png');
-    background-repeat: no-repeat;
-    background-position: 10px center; /* Position the icon inside the input */
-    background-size: 20px 20px; /* Set the size of the icon */
+    color: var(--text-color);
+    padding: 8px 12px 8px 38px; /* Space for the icon */
     border: none;
-    border-radius: 2px; /* Border radius */
+    border-radius: 2px;
+    background-image: url('../img/icon.png');
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: 12px center;
 }
 
 
-.search-bar input::placeholder {
+
+
+
+.search-input::placeholder {
     color: #888;
 }
 
-
 /* Sign In Button */
 .sign-in {
-    background-color: transparent;
-    color: white;
-    border: 1px solid white;
+    color: white; /* Set text color to white */
+    border: 1px solid white; /* Set border color to white */
     padding: 5px 15px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
+    transition: all 0.3s ease;
 }
+
 
 .sign-in:hover {
-    background-color: white;
-    color: #111;
+    background-color: var(--text-color);
+    color: var(--primary-bg);
 }
 
-/* Menu Section Styling */
+/* Menu Section */
 .menu {
-    background-color: #040B12;
+    background-color: #000000 !important;
     padding: 10px 0;
-    /* width: 1512px;  */
-    height: 48px; 
-    margin: 0 auto; 
-    border-bottom: 1px solid #333; 
+    height: 48px;
+    margin: 0 auto;
+    border-bottom: 1px solid #000000;
 }
 
-.dropdown .btn-secondary {
-    color: white;  
-    background-color: transparent; 
-    border: none; 
-}
-
-
-.menu a {
-    color: rgb(17, 11, 11);
-    text-decoration: none;
-    font-size: 15px;
-    margin-right: 10px; 
-}
-
-.menu a:hover {
-    color: #040B12; 
-}
-
-
+/* Dropdown Menu */
 .dropdown-menu {
-    background-color: #040B12;
+    background-color: var(--primary-bg);
+    border: 1px solid var(--border-color);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.dropdown-item {
+    color: var(--text-color) !important;
+}
 
-@media (max-width: 768px) {
-    /* For small screens */
-    .search-bar .search-input {
-        width: 80%; /* Adjust width for mobile */
-        padding-left: 30px;
-    }
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
 
+/* Mobile Styles */
+.navbar-toggler {
+    border-color: var(--text-color);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
     .menu {
-        flex-direction: column; /* Stack menu items vertically */
-        padding: 10px 0;
-    }
-
-    .menu a {
-        margin-right: 0; /* Remove margin on mobile */
-        padding: 10px 0; /* Add padding for spacing between links */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .logo-img {
-        width: 80px; /* Resize logo for smaller screens */
-    }
-}
-
-/* Further mobile responsiveness */
-@media (max-width: 480px) {
-    .search-bar .search-input {
-        width: 100%; /* Full-width search bar on smaller screens */
-        padding-left: 35px; /* Adjust icon positioning */
+        width: 40px; 
     }
 
-    .menu {
-        padding-left: 15px;
-        padding-right: 15px;
+    .search-bar {
+        flex-grow: 1; 
+        margin: 0 10px; 
     }
 
-    .logo {
-        font-size: 16px; /* Smaller logo font size */
+    .search-input {
+        width: 100%; 
     }
 
     .sign-in {
-        padding: 5px 10px; /* Adjust padding for smaller screens */
+        width: auto; 
+        margin: 7px; 
+    }
+
+   
+    .nav-item {
+        display: none;
+    }
+}
+
+
+/* Extra Small Devices */
+@media (max-width: 437px) {
+    .search-input {
+        width: 100%;
+        font-size: 14px;
+        padding: 6px 10px 6px 32px;
+    }
+
+    .logo-img {
+        width: 52px;
+        /* margin-right: 4px; */
+    }
+
+    .sign-in {
+        font-size: 10px;
+        padding: 4px 10px;
+    }
+
+    .navbar {
+        padding: 0.25rem 0;
+    }
+
+    .container {
+        padding: 0 0.5rem;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .menu {
+        height: 40px;
+        padding: 5px 0;
     }
 }
