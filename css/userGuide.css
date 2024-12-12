@@ -1,0 +1,66 @@
+.custom-sidebar {
+  min-height: 100vh;
+  background-color: #eef3f7 !important;
+  border-right: 1px solid #dee2e6;
+}
+
+.userGuide-nav-link {
+  color: #040b12;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.userGuide-nav-link:hover {
+  background-color: #dae4ff !important;
+  color: #040b12 !important;
+}
+
+.userGuide-nav-link.active {
+  background-color: #dae4ff !important;
+  color: #040b12 !important;
+  font-weight: 500;
+}
+
+.main-content {
+  padding: 1.5rem;
+  background-color: white;
+}
+.main-content .card {
+  color: #515a63 !important;
+}
+
+/* Sidebar specific styles */
+.nav-item .userGuide-nav-link[data-bs-toggle="collapse"] {
+  font-weight: 500;
+}
+
+.nav-item .collapse .userGuide-nav-link {
+  padding-left: 1rem;
+  font-weight: normal;
+}
+
+.bi-chevron-right {
+  transition: transform 0.3s ease;
+}
+
+.collapse.show + .userGuide-nav-link .bi-chevron-right,
+[aria-expanded="true"] .bi-chevron-right {
+  transform: rotate(90deg);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .custom-sidebar {
+    min-height: auto;
+    border-right: none;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+}
+
+.card {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}

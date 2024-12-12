@@ -1,3 +1,21 @@
 .text-orange{
     color: #d64310 !important;
 }
+.custom-navbar {
+    background-color: #EEF3F7;
+    border-bottom: 1px solid #DCDFE2;
+    padding: 1rem 0;
+}
+
+.nav-pills .nav-link {
+    color: #515A63;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.nav-pills .nav-link.active {
+    background-color: transparent;
+    color: #11309C !important;
+    border-radius: 0px;
+    border-bottom: 2px solid #11309C;
+}

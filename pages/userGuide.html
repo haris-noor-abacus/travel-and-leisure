@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel API Platform</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/custom-style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/userGuide.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <div id="header-placeholder"></div>
+    </header>
+    <!-- Hero Section -->
+    <section class="py-5">
+        <div class="container">
+            <h1>Help & Support</h1>
+            <p class="text-secondary fs-6">Kickstart your journey with our platform using the FAQ for quick answers and
+                the User Guide for detailed tips!</p>
+
+            <nav class="custom-navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link" href="#getting-start">Getting Start</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link" href="#faqs">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link active" href="#guide">User Guide</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container">
+                <div class="row">
+                    <!-- Sidebar -->
+                    <div class="col-lg-4 col-md-5 custom-sidebar p-0">
+                        <div class="d-flex flex-column p-3 h-100 shadow-sm">
+                            <ul class="nav flex-column mb-auto">
+                                <li class="nav-item">
+                                    <a href="#"
+                                        class="userGuide-nav-link nav-link d-flex justify-content-between align-items-center"
+                                        data-bs-toggle="collapse" data-bs-target="#accountSubmenu">
+                                        Account Management
+                                        <i class="bi bi-chevron-right"></i>
+                                    </a>
+                                    <div class="collapse show" id="accountSubmenu">
+                                        <ul class="nav flex-column ms-3">
+                                            <li class="nav-item">
+                                                <a href="#" class="userGuide-nav-link nav-link active">Registration,
+                                                    Sign-In, Password</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="userGuide-nav-link nav-link">My Account & Company
+                                                    Profile</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#"
+                                        class="userGuide-nav-link nav-link d-flex justify-content-between align-items-center"
+                                        data-bs-toggle="collapse" data-bs-target="#productsSubmenu">
+                                        Products
+                                        <i class="bi bi-chevron-right"></i>
+                                    </a>
+                                    <div class="collapse" id="productsSubmenu">
+                                        <ul class="nav flex-column ms-3">
+                                            <li class="nav-item">
+                                                <a href="#" class="userGuide-nav-link nav-link">Viewing Products</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#"
+                                        class="userGuide-nav-link nav-link d-flex justify-content-between align-items-center"
+                                        data-bs-toggle="collapse" data-bs-target="#securitySubmenu">
+                                        Security
+                                        <i class="bi bi-chevron-right"></i>
+                                    </a>
+                                    <div class="collapse" id="securitySubmenu">
+                                        <ul class="nav flex-column ms-3">
+                                            <li class="nav-item">
+                                                <a href="#" class="userGuide-nav-link nav-link">Roles & Permissions</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="userGuide-nav-link nav-link">Authentication &
+                                                    Authorization</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="userGuide-nav-link nav-link">Security Standards</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#"
+                                        class="userGuide-nav-link nav-link d-flex justify-content-between align-items-center"
+                                        data-bs-toggle="collapse" data-bs-target="#appsSubmenu">
+                                        Applications
+                                        <i class="bi bi-chevron-right"></i>
+                                    </a>
+                                    <div class="collapse" id="appsSubmenu">
+                                        <ul class="nav flex-column ms-3">
+                                            <li class="nav-item">
+                                                <a href="#" class="userGuide-nav-link nav-link">Dashboard & App
+                                                    Management</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="userGuide-nav-link nav-link">Promoting Apps &
+                                                    Status</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#"
+                                        class="userGuide-nav-link nav-link d-flex justify-content-between align-items-center"
+                                        data-bs-toggle="collapse" data-bs-target="#versionSubmenu">
+                                        Versioning
+                                        <i class="bi bi-chevron-right"></i>
+                                    </a>
+                                    <div class="collapse" id="versionSubmenu">
+                                        <ul class="nav flex-column ms-3">
+                                            <li class="nav-item">
+                                                <a href="#" class="userGuide-nav-link nav-link">Version Control</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Main Content -->
+                    <div class="col-lg-8 col-md-7 main-content">
+                        <div >
+                            <h3 class="mb-2">Registration</h3>
+                            <p class="mb-4">
+                                To be able to evaluate or connect to our API Products in any environment, you must
+                                register on the Developer Portal.
+                            </p>
+
+                            <!-- Important Information Card -->
+                            <div class="card mb-4 border-gray">
+                                <div class="card-header">
+                                    <i class="bi bi-info-circle-fill text-danger me-2"></i>
+                                    Important Information
+                                </div>
+                                <div class="card-body bg-light">
+                                    <ul class="mb-0">
+                                        <li class="mb-2">
+                                            After submission, you'll receive activation instructions via email
+                                        </li>
+                                        <li class="mb-2">
+                                            Account activation is required to:
+                                            <ul class="ms-4 mt-2">
+                                                <li>View technical specifications</li>
+                                                <li>Evaluate/test L+T API products</li>
+                                                <li>Create system connections</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Sign In Section -->
+                            <section class="mb-4">
+                                <h3>Sign In</h3>
+                                <p>
+                                    After registration, sign in to access various features and functions that enable you
+                                    to evaluate and consume Equifax API products.
+                                </p>
+                            </section>
+
+                            <!-- Password Section -->
+                            <section class="mb-4">
+                                <h3>Change / Reset Account Password</h3>
+                                <p>
+                                    For security reasons, you will periodically be forced to change your password.
+                                </p>
+                                <div class="card border-gray">
+                                    <div class="card-header bg-gray">
+                                        <i class="bi bi-info-circle-fill text-danger me-2"></i>
+                                        Important Information
+                                    </div>
+                                    <div class="card-body bg-light">
+                                        <ul class="mb-0">
+                                            <li class="mb-2"></i>You can change or reset your
+                                                password at any time</li>
+                                            <li class="mb-2">Your new password cannot be
+                                                one previously used</li>
+                                            <li>Password requirements are shown during the
+                                                reset process</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="mb-4">
+                                <h3>My Account & Company Profile</h3>
+                                <p>
+                                    Anytime after you have registered (and are signed-in, you can update your Account
+                                    and your Company Information.
+                                </p>
+                                <div class="card border-gray">
+                                    <div class="card-header bg-gray">
+                                        <i class="bi bi-info-circle-fill text-danger me-2"></i>
+                                        Important Information
+                                    </div>
+                                    <div class="card-body bg-light">
+                                        <ul class="mb-0">
+                                            <li class="mb-2">You can change your account password.</li>
+                                            <li class="mb-2">You cannot change your account email address.</li>
+                                            <li>In  your My Company Profile, it is important that you provide complete
+                                                and accurate information. The more company profile fields you populate
+                                                In addition to the required fields, the better Equifax is able to serve
+                                                your needs when promoting your apps to higher environments.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="mb-4">
+                                <h3>Where do I find it?</h3>
+                                <p>
+                                    Hover on your first name in the top-right corner of the page, and select My
+                                    Account or My Company as appropriate.
+                                </p>
+                            </section>
+
+                            <section class="mb-4">
+                                <h3>Transferring Your Account</h3>
+                                <p>
+                                    You cannot transfer your account to another user, however, you can transfer apps you
+                                    own to other users. See <strong>Application Owner Change</strong> to learn more.
+                                </p>
+                            </section>
+
+                            <section class="mb-4">
+                                <h3>Remove / Disable Account</h3>
+                                <p>
+                                    You cannot remove your account. If you want to have your account disabled, use the
+                                    CONTACT US link in the top navigation.
+                                </p>
+                            </section>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <!-- Include the footer file -->
+        <div id="footer-placeholder"></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+
+</body>
+<script>
+    // Function to load external HTML content
+    function loadHTML(file, elementId) {
+        fetch(file)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById(elementId).innerHTML = data;
+
+                // Adjust image paths by prepending "../"
+                const images = document.getElementById(elementId).querySelectorAll('img');
+                images.forEach(img => {
+                    const currentSrc = img.getAttribute('src');
+                    if (currentSrc && !currentSrc.startsWith('../')) {
+                        img.src = '../' + currentSrc;
+                    }
+                });
+            });
+    }
+
+    // Load the header and footer
+    loadHTML('../pages/header.html', 'header-placeholder');
+    loadHTML('../pages/footer.html', 'footer-placeholder');
+</script>
+
+</html>

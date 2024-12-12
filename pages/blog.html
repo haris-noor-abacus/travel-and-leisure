@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Blog - Financial Technology Insights</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/blog.css">
 
 
 </head>
+
 <body>
+    <header>
+        <div id="header-placeholder"></div>
+    </header>
     <div class="container py-5">
         <!-- Header -->
-        <header class="mb-5">
+        <section class="mb-5">
             <h1 class="display-5 mb-4" style="font-weight: 600; font-size: 32px; line-height: 38.4px;">Our Blog</h1>
             <p class="text-muted" style="font-weight: 400; font-size: 16px;">
-                Explore our extensive collection of insightful articles that delve into the latest advancements in technology and the exciting world of innovation.
+                Explore our extensive collection of insightful articles that delve into the latest advancements in
+                technology and the exciting world of innovation.
             </p>
-                        
+
             <div class="container my-4">
                 <div class="row align-items-center">
                     <!-- Search Bar -->
@@ -27,12 +36,12 @@
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Search by name">
                             <button class="btn btn-outline-secondary" type="button">
-                                <i class="bi bi-search"></i> 
+                                <i class="bi bi-search"></i>
                             </button>
                         </div>
                     </div>
 
-            
+
                     <!-- Category Filter -->
                     <div class="col-md-4 d-flex align-items-center">
                         <label class="me-2 mb-0" style="white-space: nowrap;">Category Filter:</label>
@@ -43,139 +52,178 @@
                             <option>Banking</option>
                         </select>
                     </div>
-                    
+
                     <div class="col-md-4 text-md-end mt-3 mt-md-0">
                         <button class="btn btn-outline-secondary btn-custom-background no-hover" type="button">
                             <i class="bi bi-x"></i> Clear Filter
                         </button>
-                    </div>       
-                                        
+                    </div>
+
                 </div>
             </div>
-            
-        </header>
 
-       <!-- Blog Grid -->
-       <div class="row g-4">
-        <!-- Article 1 -->
-        <div class="col-md-4 blog-article" data-category="finance">
-            <div class="card h-100 shadow-sm">
-                <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="CFPB">
-                <div class="card-body">
-                    <small class="text-muted">Dec 7, 2024</small>
-                    <h5 class="card-title mt-2">The CFPB's final 1033 rule</h5>
-                    <p class="card-text">We are encouraged by the CFPB's efforts to promote consumer choice and competition...</p>
+        </section>
+
+        <!-- Blog Grid -->
+        <div class="row g-4">
+            <!-- Article 1 -->
+            <div class="col-md-4 blog-article" data-category="finance">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="CFPB">
+                    <div class="card-body">
+                        <small class="text-muted">Dec 7, 2024</small>
+                        <h5 class="card-title mt-2">The CFPB's final 1033 rule</h5>
+                        <p class="card-text">We are encouraged by the CFPB's efforts to promote consumer choice and
+                            competition...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="col-md-4 blog-article" data-category="technology">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="API Impact">
+                    <div class="card-body">
+                        <small class="text-muted">Dec 1, 2024</small>
+                        <h5 class="card-title mt-2">Exploring the Impact of APIs</h5>
+                        <p class="card-text">Understanding how APIs are transforming modern financial services...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="col-md-4 blog-article" data-category="finance">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Investments">
+                    <div class="card-body">
+                        <small class="text-muted">Dec 1, 2024</small>
+                        <h5 class="card-title mt-2">Introducing Investments Move</h5>
+                        <p class="card-text">A better way to transfer and grow your investments...</p>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Article 2 -->
-        <div class="col-md-4 blog-article" data-category="technology">
-            <div class="card h-100 shadow-sm">
-                <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="API Impact">
-                <div class="card-body">
-                    <small class="text-muted">Dec 1, 2024</small>
-                    <h5 class="card-title mt-2">Exploring the Impact of APIs</h5>
-                    <p class="card-text">Understanding how APIs are transforming modern financial services...</p>
+        <div class="row g-4">
+            <!-- Article 1 -->
+            <div class="col-md-4 blog-article" data-category="finance">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="CFPB">
+                    <div class="card-body">
+                        <small class="text-muted">Dec 7, 2024</small>
+                        <h5 class="card-title mt-2">The CFPB's final 1033 rule</h5>
+                        <p class="card-text">We are encouraged by the CFPB's efforts to promote consumer choice and
+                            competition...</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Article 3 -->
-        <div class="col-md-4 blog-article" data-category="finance">
-            <div class="card h-100 shadow-sm">
-                <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Investments">
-                <div class="card-body">
-                    <small class="text-muted">Dec 1, 2024</small>
-                    <h5 class="card-title mt-2">Introducing Investments Move</h5>
-                    <p class="card-text">A better way to transfer and grow your investments...</p>
+            <!-- Article 2 -->
+            <div class="col-md-4 blog-article" data-category="technology">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="API Impact">
+                    <div class="card-body">
+                        <small class="text-muted">Dec 1, 2024</small>
+                        <h5 class="card-title mt-2">Exploring the Impact of APIs</h5>
+                        <p class="card-text">Understanding how APIs are transforming modern financial services...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="col-md-4 blog-article" data-category="finance">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Investments">
+                    <div class="card-body">
+                        <small class="text-muted">Dec 1, 2024</small>
+                        <h5 class="card-title mt-2">Introducing Investments Move</h5>
+                        <p class="card-text">A better way to transfer and grow your investments...</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-       <div class="row g-4">
-        <!-- Article 1 -->
-        <div class="col-md-4 blog-article" data-category="finance">
-            <div class="card h-100 shadow-sm">
-                <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="CFPB">
-                <div class="card-body">
-                    <small class="text-muted">Dec 7, 2024</small>
-                    <h5 class="card-title mt-2">The CFPB's final 1033 rule</h5>
-                    <p class="card-text">We are encouraged by the CFPB's efforts to promote consumer choice and competition...</p>
-                </div>
-            </div>
-        </div>
+    <footer>
+        <!-- Include the footer file -->
+        <div id="footer-placeholder"></div>
+    </footer>
 
-        <!-- Article 2 -->
-        <div class="col-md-4 blog-article" data-category="technology">
-            <div class="card h-100 shadow-sm">
-                <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="API Impact">
-                <div class="card-body">
-                    <small class="text-muted">Dec 1, 2024</small>
-                    <h5 class="card-title mt-2">Exploring the Impact of APIs</h5>
-                    <p class="card-text">Understanding how APIs are transforming modern financial services...</p>
-                </div>
-            </div>
-        </div>
 
-        <!-- Article 3 -->
-        <div class="col-md-4 blog-article" data-category="finance">
-            <div class="card h-100 shadow-sm">
-                <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Investments">
-                <div class="card-body">
-                    <small class="text-muted">Dec 1, 2024</small>
-                    <h5 class="card-title mt-2">Introducing Investments Move</h5>
-                    <p class="card-text">A better way to transfer and grow your investments...</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script>
-        // Search functionality
-        document.querySelector('input[type="text"]').addEventListener('input', function(e) {
-            const searchTerm = e.target.value.toLowerCase();
-            const cards = document.querySelectorAll('.blog-card');
-            
-            cards.forEach(card => {
-                const title = card.querySelector('.card-title').textContent.toLowerCase();
-                const text = card.querySelector('.card-text').textContent.toLowerCase();
-                
-                if (title.includes(searchTerm) || text.includes(searchTerm)) {
-                    card.style.display = '';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        });
-
-        // Category filter
-        document.querySelector('.form-select').addEventListener('change', function(e) {
-            const category = e.target.value;
-            const cards = document.querySelectorAll('.blog-card');
-            
-            if (category === 'All Articles') {
-                cards.forEach(card => card.style.display = '');
-                return;
-            }
-            
-            cards.forEach(card => {
-                const cardCategory = card.dataset.category;
-                card.style.display = cardCategory === category ? '' : 'none';
-            });
-        });
-
-        // Clear filter
-        document.querySelector('#clearFilter').addEventListener('click', function() {
-            document.querySelector('input[type="text"]').value = '';
-            document.querySelector('.form-select').value = 'All Articles';
-            
-            document.querySelectorAll('.blog-card').forEach(card => {
-                card.style.display = '';
-            });
-        });
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
     </script>
 </body>
+<script>
+    // Function to load external HTML content
+    function loadHTML(file, elementId) {
+        fetch(file)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById(elementId).innerHTML = data;
+
+                // Adjust image paths by prepending "../"
+                const images = document.getElementById(elementId).querySelectorAll('img');
+                images.forEach(img => {
+                    const currentSrc = img.getAttribute('src');
+                    if (currentSrc && !currentSrc.startsWith('../')) {
+                        img.src = '../' + currentSrc;
+                    }
+                });
+            });
+    }
+
+    // Load the header and footer
+    loadHTML('../pages/header.html', 'header-placeholder');
+    loadHTML('../pages/footer.html', 'footer-placeholder');
+
+    // Search functionality
+    document.querySelector('input[type="text"]').addEventListener('input', function (e) {
+        const searchTerm = e.target.value.toLowerCase();
+        const cards = document.querySelectorAll('.blog-card');
+
+        cards.forEach(card => {
+            const title = card.querySelector('.card-title').textContent.toLowerCase();
+            const text = card.querySelector('.card-text').textContent.toLowerCase();
+
+            if (title.includes(searchTerm) || text.includes(searchTerm)) {
+                card.style.display = '';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+
+    // Category filter
+    document.querySelector('.form-select').addEventListener('change', function (e) {
+        const category = e.target.value;
+        const cards = document.querySelectorAll('.blog-card');
+
+        if (category === 'All Articles') {
+            cards.forEach(card => card.style.display = '');
+            return;
+        }
+
+        cards.forEach(card => {
+            const cardCategory = card.dataset.category;
+            card.style.display = cardCategory === category ? '' : 'none';
+        });
+    });
+
+    // Clear filter
+    document.querySelector('#clearFilter').addEventListener('click', function () {
+        document.querySelector('input[type="text"]').value = '';
+        document.querySelector('.form-select').value = 'All Articles';
+
+        document.querySelectorAll('.blog-card').forEach(card => {
+            card.style.display = '';
+        });
+    });
+</script>
+
 </html>
