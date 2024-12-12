@@ -192,7 +192,7 @@
 }
 
 /* Extra Small Devices */
-@media (max-width: 437px) {
+@media (max-width: 445px) {
     .search-input {
         width: 100%;
         font-size: 14px;
@@ -201,6 +201,43 @@
 
     .logo-img {
         width: 52px;
+        /* margin-right: 4px; */
+    }
+
+    .sign-in {
+        font-size: 10px;
+        padding: 4px 10px;
+    }
+
+    .navbar {
+        padding: 0.25rem 0;
+    }
+
+    .container {
+        padding: 0 0.5rem;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .menu {
+        height: 40px;
+        padding: 5px 0;
+    }
+}
+
+
+@media (max-width: 381px) {
+    .search-input {
+        width: 100%;
+        font-size: 12px;
+        padding: 6px 8px 6px 30px;
+    }
+
+    .logo-img {
+        width: 45px;
         /* margin-right: 4px; */
     }
 
